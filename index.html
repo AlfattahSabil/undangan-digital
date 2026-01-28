@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan pernikahan</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="main-container">
+      <img src="img/background.png" />
+      <div class="wrapper">
+        <div class="rounded-box">
+          <div class="title">
+            <p>UNDANGAN</p>
+            <p>PERNIKAHAN</p>
+          </div>
+          <img src="img/rounded.png" height="200" id="img-rounded" />
+
+          <div class="wedding-names">
+            <p>Eva</p>
+            <p>&</p>
+            <p>Iqbal</p>
+          </div>
+        </div>
+
+        <div class="invitation">
+          <p>Kepada Yth:</p>
+          <p>Bapak/Ibu/Saudara/i</p>
+          <p>Nama Tamu</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second container -->
+    <div class="second-container">
+      <img src="img/flower-2.png" class="flower top-flower" />
+      <img src="img/flower-2.png" class="flower bottom-flower" />
+      <div class="hero">
+        <p id="invitation">
+          Tanpa mengurangi rasa hormat kami mengundang Bapak/Ibu/Saudara/i pada
+          pernikahan kami:
+        </p>
+        <div class="person-wrapper">
+          <div class="person man-person">
+            <img src="img/person-man.png" />
+            <div class="name-wrapper">
+              <p>Iqbal Ramadhan</p>
+              <p>Putra Pertama Bpk. Pairan & Ibu Sulastri</p>
+              <p>@iqbalrmdhn</p>
+            </div>
+          </div>
+          <div class="person women-person">
+            <div class="name-wrapper">
+              <p>Eva Ariani</p>
+              <p>Putri Ketiga Bpk. Masripin & Ibu Rosidah</p>
+              <p>@evaarni</p>
+            </div>
+            <img src="img/person-women.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Container -->
+    <div class="third-container">
+      <img src="img/flower-1.png" />
+      <div class="date-wrapper">
+        <div class="date-content">
+          <div class="text-wrap">
+            <p>Save</p>
+            <p>the</p>
+            <p>Date</p>
+          </div>
+          <div class="wedding-text">
+            <p>THE WEDDING DAY OF</p>
+            <p>IQBAL & EVA</p>
+          </div>
+          <div class="date">
+            <p>28 Maret 2026</p>
+          </div>
+          <div class="text akad">
+            <p>AKAD NIKAH</p>
+            <p>Pukul 08.00-10.00 WIB</p>
+            <p>Aula SMKN 65 Jakarta</p>
+          </div>
+          <div class="text resepsi">
+            <p>RESEPSI</p>
+            <p>Pukul 11.00-Selesai</p>
+            <p>Lapangan SMKN 65 Jakarta</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      ScrollReveal({ reset: true }).reveal(".title", {delay: 300});
+      ScrollReveal({ reset: true }).reveal("#invitation", {delay: 300});
+
+      ScrollReveal({ distance: "60px" });
+      ScrollReveal({ reset: true }).reveal("#img-rounded", {delay: 300});
+      ScrollReveal({ reset: true }).reveal(".wedding-names", {delay: 300});
+      ScrollReveal({ reset: true }).reveal(".invitation", {delay: 300});
+      ScrollReveal().reveal(".top-flower", {delay: 300, origin: "left"});
+      ScrollReveal().reveal(".bottom-flower", {delay: 300, origin: "left"});
+      ScrollReveal().reveal(".man-person", {delay: 300, origin: "right"});
+      ScrollReveal().reveal(".women-person", {delay: 300, origin: "left"});
+      ScrollReveal().reveal(".date-content", {delay: 300, origin: "bottom"});
+    </script>
+  </body>
+</html>
